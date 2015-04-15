@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spring_pharmacy</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<div id='bd'>
+<body>
+  <div id='header'>
+  <!-- Header Image Displayes here -->
+  </div>
+  <div id='menu'>
+    <div id="navbar">
+      <ul>
+        <li><a href="/items">Products</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+        <li><a href="/admin">Login</a></li>
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+    </div> 
+
+  </div>
+  <div id='container'>
+    <div id='content'>
+  		<%= yield %>
+    </div>
+    <div id='first-column'>
+    	<div class="searchbox">
+    		<h2 class="BoxHeaders">Search</h2>
+    		<input type="text" name="search" /><input type="submit" value="Search" />
+    	</div>
+      <div class="box">
+        <h2 class="BoxHeaders">Special Offers</h2>
+        <img src="/assets/Medicines/pic2.jpg" name="Rotating" id="Rotating1" alt="Special Offers	">
+    	
+    	</div>
+    	
+  </div>
+  
+</body>
+</html>
