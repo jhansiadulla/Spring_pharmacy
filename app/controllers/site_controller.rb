@@ -4,4 +4,6 @@ class SiteController < ApplicationController
 
   def contact
   end
+  def Thank you
+  end
 end

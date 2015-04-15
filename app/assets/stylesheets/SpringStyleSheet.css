@@ -113,6 +113,15 @@ div#menu {
     min-width: 744px;
     margin: auto;
 }
+ul.hmenu {
+  list-style: none; 
+  margin: 0 0 2em;
+  padding: 0;
+}
+
+ul.hmenu li {
+  display: inline;  
+}
 div#menu {
     border-bottom: none;
     width: 1024px;
