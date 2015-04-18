@@ -18,6 +18,8 @@
         <li><a href="/items">Products</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/contact">Contact Us</a></li>
+        <li><a href="/cart">Cart</a></li>
+        
         <% if current_user %>
     <%= link_to 'Logout', destroy_user_session_path %>
 <% else %>
